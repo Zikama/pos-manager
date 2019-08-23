@@ -1,0 +1,475 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Martel|Quattrocento+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,900" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Simple Stock Managment</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="img_prof">
+            <h1>Stock Manager</h1>
+        </div>
+        <nav class="nav">
+            <div class="options">
+                <div class="notifications">
+                    <ul>
+                        <li>
+                            POS
+                        </li>
+                        <li>
+                            CashBook
+                        </li>
+                        <li>
+                            INVOICE
+                        </li>
+                        <li>
+                            User preference
+                        </li>
+                        <li>
+                            Settings
+                        </li>
+                        <li>
+                            Stock alert
+                        </li>
+                        <li>
+                            Lock
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>time</p>
+        </nav>
+    </header>
+    <main class="main">
+        <aside class="asid">
+            <!-- USer profile -->
+            <div class="user_profile">
+                <h2>USER</h2>
+            </div>
+            <div class="uls">
+                <!-- Dashboard -->
+                <button class="lis">Dashboard</button>
+                <!-- POS -->
+                <button class="lis">Point of Sale</button>
+                <!-- Sale Tab -->
+                <button class="art-dop_down io_aro lis ">Sale</button>
+                <!-- Sale Tab container  -->
+                <ul class="art-dop_col ul " id="sale" hidden>
+                    <li class="li">Sell list</li>
+                    <li class="li">Return list</li>
+                    <li class="li">Sell log</li>
+                    <li class="li">Giftcard</li>
+                </ul>
+                <!-- Quotation Tab -->
+                <button class="art-dop_down io_aro lis ">Quotation</button>
+                <!-- Quotation Tab container  -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Add quotation</li>
+                    <li class="li">Quotation list</li>
+                </ul>
+                <!-- Purchase Tab -->
+                <button class="art-dop_down io_aro lis ">Purchase</button>
+                <!-- Purchase Tab container  -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Add Purchase</li>
+                    <li class="li">Purchase list</li>
+                    <li class="li">Due Invoice</li>
+                    <li class="li">Return list</li>
+                    <li class="li">Purchase Log</li>
+                </ul>
+                <!-- Stock Transfer Tab -->
+                <button class="art-dop_down io_aro lis ">Stock Transfer</button>
+                <!-- Stock Transfer Tab container  -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Add Transfer</li>
+                    <li class="li">Transfer list</li>
+                    <li class="li">Receive list</li>
+                </ul>
+                <!-- Product Tab -->
+                <button class="art-dop_down io_aro lis ">Product</button>
+                <!-- Product Tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Product list</li>
+                    <li class="li">Barcode print</li>
+                    <li class="li">Category list</li>
+                    <li class="li">Add Category</li>
+                    <li class="li">Import</li>
+                    <li class="li">Stock alert</li>
+                </ul>
+                <!-- Customer tab -->
+                <button class="art-dop_down io_aro lis ">Customer</button>
+                <!-- Customer tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Add Customer</li>
+                    <li class="li">Customer list</li>
+                </ul>
+                <!-- Supplier tab -->
+                <button class="art-dop_down io_aro lis ">Suplier</button>
+                <!-- Supplier tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Add Suplier</li>
+                    <li class="li">Suplier list</li>
+                </ul>
+                <!-- Accounting tab -->
+                <button class="art-dop_down io_aro lis ">Accounting</button>
+                <!-- Accounting tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Deposit</li>
+                    <li class="li">Withdraw</li>
+                    <li class="li">Transaction list</li>
+                    <li class="li">Add transfer</li>
+                    <li class="li">Transfer list</li>
+                    <li class="li">Add Bank account</li>
+                    <li class="li">Bank account list</li>
+                    <li class="li">Income source</li>
+                    <li class="li">Balance sheet</li>
+                    <li class="li">Income monthwise</li>
+                    <li class="li">Expense monthwise</li>
+                    <li class="li">Income vs Expense </li>
+                    <li class="li">Profit vs loss </li>
+                    <li class="li">Cash Book </li>
+                </ul>
+                <!-- Expanditure tab -->
+                <button class="art-dop_down io_aro lis ">Expanditure</button>
+                <!-- Expanditure tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Add Expense</li>
+                    <li class="li">Expense list</li>
+                    <li class="li">Add Category</li>
+                    <li class="li">Category list</li>
+                    <li class="li">Expense monthwise</li>
+                    <li class="li">Summary</li>
+                </ul>
+                <!-- Loan Manager tab -->
+                <button class="art-dop_down io_aro lis ">Loan Manager</button>
+                <!-- Loan Manager tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Take Loan</li>
+                    <li class="li">Loan list</li>
+                    <li class="li">Summary</li>
+                </ul>
+                <!-- Reports tab -->
+                <button class="art-dop_down io_aro lis ">Reports</button>
+                <!-- Reports tab container -->
+                <ul class="art-dop_col ul " id="quotation" hidden>
+                    <li class="li">Overview report</li>
+                    <li class="li">Collection report</li>
+                    <li class="li">Due Collection report</li>
+                    <li class="li">Due paid report</li>
+                    <li class="li">Sell report</li>
+                    <li class="li">Purchase report</li>
+                    <li class="li">Sell payment report</li>
+                    <li class="li">Purchase payment report</li>
+                    <li class="li">Sell tax report</li>
+                    <li class="li">Purchase tax report</li>
+                    <li class="li">Tax Overview report</li>
+                    <li class="li">Stock report</li>
+                </ul>
+                <button class="art-dop_down io_aro lis ">Analitics</button>
+                <!-- SMS Tab -->
+                <button class="art-dop_down io_aro lis ">SMS</button>
+                <!-- SMS tab container -->
+                <ul class="art-dop_col ul " id="sms" hidden>
+                    <li class="li">Send SMS</li>
+                    <li class="li">SMS report</li>
+                    <li class="li">SMS Settings</li>
+                </ul>
+                <!-- User tab -->
+                <button class="art-dop_down io_aro lis ">User</button>
+                <!-- User tab container -->
+                <ul class="art-dop_col ul " id="sms" hidden>
+                    <li class="li">Add user</li>
+                    <li class="li">User list</li>
+                    <li class="li">Add Usergroup</li>
+                    <li class="li">Usergroup list</li>
+                </ul>
+                <button class="art-dop_down io_aro lis ">System</button>
+                <ul class="art-dop_col ul " id="sms" hidden>
+                    <li class="li">Store</li>
+                    <li class="li">Receipt template</li>
+                    <li class="li">User preference</li>
+                    <li class="li art-dop_down io_aro">Brand</li>
+                    <ul class="art-dop_col ul " id="sms" hidden>
+                        <li class="li">Add brand</li>
+                        <li class="li">Brand list</li>
+                    </ul>
+                    <li class="li">Currency</li>
+                    <li class="li">Unit</li>
+                    <li class="li">TaxRate</li>
+                    <li class="li">Box</li>
+                    <li class="li">Printer</li>
+                    <li class="li">Language</li>
+                </ul>
+                <button class="lis ">Switch Store</button>
+            </div>
+        </aside>
+        <section class="sec">
+            <div class="dashboard">
+                <h3>Dashboard on Store 1</h3>
+                <div class="art-more_header">
+                    <div class="more_header-one">
+                        <h3>POS</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Sell List</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Overview Report</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Sell Report</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Purchase Report</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Stock alert</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Expired</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Backup/Restore</h3>
+                    </div>
+                    <div class="more_header-one">
+                        <h3>Stores</h3>
+                    </div>
+                </div>
+                <div class="art-dash_alert">
+                    <div class="dash_alert-one">
+                        <h3>TOTAL INVOICE</h3>
+                        <p>14,525</p>
+                        <h3>TOTAL INVOICE TODAY</h3>
+                        <p>125</p>
+                    </div>
+
+                    <div class="dash_alert-one">
+                        <h3>TOTAL CUSTOMER</h3>
+                        <p>125</p>
+                        <h3>TOTAL CUSTOMER TODAY</h3>
+                        <p>25</p>
+                    </div>
+
+                    <div class="dash_alert-one">
+                        <h3>TOTAL SUPLIER</h3>
+                        <p>25</p>
+                        <h3>TOTAL SUPLIER TODAY</h3>
+                        <p>7</p>
+                    </div>
+                    <div class="dash_alert-one">
+                        <h3>TOTAL PRODUCT</h3>
+                        <p>25</p>
+                        <h3>TOTAL PRODUCT TODAY</h3>
+                        <p>7</p>
+                    </div>
+                </div>
+                <div class="art-dash_recent_activities">
+                    <div class="dash_recent_activities_tabs">
+                        <button class="act_tab sell_tab">Sells</button>
+                        <button class="act_tab quotations_tab">Quotations</button>
+                        <button class="act_tab purchases_tab">Purchases</button>
+                        <button class="act_tab transfers_tab">Transfers</button>
+                        <button class="act_tab customers_tab">Customers</button>
+                        <button class="act_tab supliers_tab">Supliers</button>
+                    </div>
+                    <div class="dash_recent_activities_container">
+                        <div id="sell_container">
+                            <table>
+                                <tr>
+                                    <th>Invoice Id</th>
+                                    <th>Created at</th>
+                                    <th>Customer Name</th>
+                                    <th>Amount</th>
+                                    <th>Payment Status</th>
+                                </tr>
+                                <tr>
+                                    <td>INV/100001787</td>
+                                    <td>2019-08-22 08:08:49</td>
+                                    <td>Walking Customer</td>
+                                    <td>25,499.00</td>
+                                    <td>Paid</td>
+                                </tr>
+                            </table>
+                            <div class="art-selling_progress">
+                                <div class="art-progress-group-container">
+                                    <div class="art-progress-group">
+                                        <span class="art-progress-text">Sell Amount</span>
+                                        <span class="art-progress-number">
+                                            514,528.60</span>
+                                        <div class="progress sm">
+                                            <div class="art-progress-bar art-progress-bar-aqua" style="width: 99.9805647344%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="art-progress-group">
+                                        <span class="art-progress-text">Discount Given</span>
+                                        <span class="art-progress-number">100.00</span>
+                                        <div class="progress sm">
+                                            <div class="art-progress-bar art-progress-bar-warning" style="width:0.019435265600396%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="art-progress-group">
+                                        <span class="art-progress-text">Due Given</span>
+                                        <span class="art-progress-number">0.00</span>
+                                        <div class="progress sm">
+                                            <div class="art-progress-bar art-progress-bar-red" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="art-progress-group">
+                                        <span class="art-progress-text">Received Amount</span>
+                                        <span class="art-progress-number">514,528.60</span>
+                                        <div class="progress sm">
+                                            <div class="art-progress-bar art-progress-bar-success" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <a href="/admin/report_overview.php" class="art-btn-flat">Overview Report →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="quotations_container" hidden>
+                            <h3>No Records</h3>
+                        </div>
+                        <div id="quotations_container" hidden>
+                            <h3>No Records</h3>
+                        </div>
+                        <div id="purchases_container" hidden>
+                            <h3>No Records</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="art-depo_withdro">
+                    <div class="depo">
+                        <p>5,845,540</p>
+                        <h3>Deposit Today</h3>
+                    </div>
+                    <div class="withdro">
+                        <p>4,540</p>
+                        <h3>Withdraw Today</h3>
+                    </div>
+                    <div class="depo_container">
+                        <table class="table table-striped no-margin">
+                            <thead>
+                                <tr class="bg-gray">
+                                    <th class="w-35 text-center">Date</th>
+                                    <th class="w-45">Description</th>
+                                    <th class="w-20 text-right">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="w-35 text-center">2019-08-22 08:08:49</td>
+                                    <td class="w-45"><a class="view-deposit art_link_color" data-refno="D2399" href="#" tyle="white-space:nowrap;max-width:100%;overflow:hidden;display:inline-block;">Deposit
+                                            for selling</a></td>
+                                    <td class="w-20 text-right">18.50</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-35 text-center">2019-08-22 08:01:39</td>
+                                    <td class="w-45"><a class="view-deposit art_link_color" data-refno="D2397" href="#" tyle="white-space:nowrap;max-width:100%;overflow:hidden;display:inline-block;">Deposit
+                                            for selling</a></td>
+                                    <td class="w-20 text-right">1,831.50</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-35 text-center">2019-08-22 07:39:49</td>
+                                    <td class="w-45"><a class="view-deposit art_link_color" data-refno="D2395" href="#" tyle="white-space:nowrap;max-width:100%;overflow:hidden;display:inline-block;">Deposit
+                                            for selling</a></td>
+                                    <td class="w-20 text-right">25,499.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="art-btn-flat">View all →</a>
+                    </div>
+                    <div class="withdro_container">
+                        <table class="table table-striped no-margin">
+                            <thead>
+                                <tr class="bg-gray">
+                                    <th class="w-35 text-center">Date</th>
+                                    <th class="w-45">Description</th>
+                                    <th class="w-20 text-right">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="w-35 text-center">2019-08-22 08:03:09</td>
+                                    <td class="w-45"><a class="view-deposit art_link_color" data-refno="W2398" href="#" style="white-space:nowrap;max-width:100%;overflow:hidden;display:inline-block;">Debit
+                                            for Product Purchase</a></td>
+                                    <td class="w-20 text-right">11,500.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-35 text-center">2019-08-22 08:00:37</td>
+                                    <td class="w-45"><a class="view-deposit art_link_color" data-refno="W2396" href="#" style="white-space:nowrap;max-width:100%;overflow:hidden;display:inline-block;">Debit
+                                            for Product Purchase</a></td>
+                                    <td class="w-20 text-right">1,138.50</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-35 text-center">2019-08-22 07:26:25</td>
+                                    <td class="w-45"><a class="view-deposit art_link_color" data-refno="W2393" href="#" style="white-space:nowrap;max-width:100%;overflow:hidden;display:inline-block;">Debit
+                                            for Product Return</a></td>
+                                    <td class="w-20 text-right">85.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="art-btn-flat">View all →</a>
+                    </div>
+                </div>
+                <div class="art-daily_charts">
+                    <!-- width="100" height="100" -->
+                    <canvas id="myChart" style="display: block; width: 100%; height: 521px;"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Friday', 'Sat'],
+                datasets: [{
+                    label: '# Income',
+                    data: [1, 2, 3, 4, 5, 6],
+                    backgroundColor: [
+                        'rgb(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgb(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                    ],
+                    borderWidth: 1
+                }, {
+                    label: '# Expenses',
+                    data: [1, 2, 3, 4, 5, 6],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgb(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
